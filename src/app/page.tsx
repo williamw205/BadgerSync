@@ -13,7 +13,7 @@ export default function Home() {
             height={32}
             className="w-8 h-8"
           />
-          <span className="text-lg font-semibold text-black">PlaylistGPT </span>
+          <span className="text-lg font-semibold text-black">PlaylistNow </span>
         </div>
         <div className="flex items-center gap-4">
           <Link
@@ -39,7 +39,7 @@ export default function Home() {
           with AI in seconds
         </h1>
         <p className="text-lg text-gray-700 text-center">
-          PlaylistGPT simplifies the process for you to create playlists in{" "}
+          PlaylistNow simplifies the process for you to create playlists in{" "}
           <br />
           seconds, completely for free.
         </p>
