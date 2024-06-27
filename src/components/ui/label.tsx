@@ -5,7 +5,7 @@ interface LabelProps extends HTMLProps<HTMLLabelElement> {
 }
 
 const Label: React.FC<LabelProps> = ({ children, ...rest }) => {
-  return <Label {...rest}>{children}</Label>;
+  return <label {...rest}>{children}</label>;
 };
 
 export default Label;

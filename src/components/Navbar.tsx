@@ -22,7 +22,8 @@ const Navbar = () => {
 
       {/* Header */}
       <header className="flex justify-between items-center py-4 px-4 md:px-14 relative z-50 bg-white">
-        <div className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
+          {/* Wrapped in Link */}
           <img
             src="/Logo.svg"
             alt="Like Music Logo"
@@ -31,7 +32,7 @@ const Navbar = () => {
             className="w-8 h-8"
           />
           <span className="text-lg font-semibold text-black">PlaylistNow</span>
-        </div>
+        </Link>
         <div className="md:hidden flex items-center">
           <button
             className="text-black hover:text-gray-700 focus:outline-none"
@@ -79,7 +80,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="#"
+            href="/create"
             className="inline-flex h-10 items-center justify-center rounded-md bg-black px-6 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             prefetch={false}
           >
@@ -90,16 +91,17 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden flex flex-col items-center gap-4 py-2 absolute top-16 inset-x-0 bg-white shadow-md rounded-md z-50">
+        <div className="md:hidden flex flex-col items-center gap-4 py-2 absolute top-16 inset-x-0 bg-white shadow-md rounded-b-md z-50">
+          {/* Changed to rounded-b-md to only round the bottom corners */}
           <Link
-            href="#"
+            href="/"
             className="text-black hover:text-gray-700"
             prefetch={false}
           >
             Home
           </Link>
           <Link
-            href="#"
+            href="/create"
             className="inline-flex h-10 items-center justify-center rounded-md bg-black px-6 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             prefetch={false}
           >
